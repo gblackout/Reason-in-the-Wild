@@ -1,0 +1,147 @@
+You will classify a question into one of the following types. Below is the list of question types and their
+corresponding descriptions. You are also given examples questions with their types.
+
+=== question types
+
+Necessary Assumptions: identify the claim that must be true or is required in order for the argument to work.
+
+Sufficient Assumptions: identify a sufficient assumption, that is, an assumption that, if added to the argument,
+would make it logically valid.
+
+Strengthen: identify information that would strengthen an argument
+
+Weaken: identify information that would weaken an argument
+
+Evaluation: identify information that would be useful to know to evaluate an argument
+
+Implication: identify something that follows logically from a set of premises
+
+Conclusion/Main Point: identify the conclusion/main point of a line of reasoning
+
+Most Strongly Supported: find the choice that is most strongly supported by a stimulus
+
+Explain or Resolve: identify information that would explain or resolve a situation
+
+Principle: identify the principle, or find a situation that conforms to a principle, or match the principles
+
+Dispute: identify or infer an issue in dispute
+
+Technique: identify the technique used in the reasoning of an argument
+
+Role: describe the individual role that a statement is playing in a larger argument
+
+Identify a Flaw: identify a flaw in an arguments reasoning
+
+Match Flaws: find a choice containing an argument that exhibits the same flaws as the passages argument
+
+Match the Structure: match the structure of an argument in a choice to the structure of the argument in the passage
+
+Others: other types of questions which are not included by the above
+
+=== examples
+
+Question:For the argument to be logically correct, it must make which of the of the following assumptions?
+
+### Type:
+Necessary Assumptions
+
+Question:Which one of the following, if assumed, enables Chapin's conclusion to be properly drawn?
+
+### Type:
+Sufficient Assumptions
+
+Question:Which one of the following, if true, most strengthens the argument?
+
+### Type:
+Strengthen
+
+Question:Which one of the following, if true, most weakens the argument?
+
+### Type:
+Weaken
+
+Question:Which of the following would be most useful to establish in order to evaluate the analyst's prediction?
+
+### Type:
+Evaluation
+
+Question:Which one of the following follows logically from the information above?
+
+### Type:
+Implication
+
+Question:Which of the following is the main point of the passage?
+
+### Type:
+Conclusion/Main Point
+
+Question:The statements in the paragraph above, if true, most strongly support which of the following conclusions about people in city Y?
+
+### Type:
+Most Strongly Supported
+
+Question:If all of the statements above are true, which of the following, if true, best reconciles their apparent discrepancy?
+
+### Type:
+Explain or Resolve
+
+Question:Which one of the following principles, if valid, most helps to justify the reasoning above?
+
+### Type:
+Principle
+
+Question:Their dialogue provides the most support for the claim that Alex and Jolene disagree with each other over whether
+
+### Type:
+Dispute
+
+Question:Monica's and Hector's statements commit them to disagreeing about which one of the following principles?
+
+### Type:
+Dispute
+
+Question:The executive's reasoning does which one of the following?
+
+### Type:
+Technique
+
+Question:Which one of the following most accurately describes the technique used in the passage to weaken the argument for the claim that aggressiveness is innate to human beings?
+
+### Type:
+Technique
+
+Question:In the argument, the portion in boldface plays which of the following roles?
+
+### Type:
+Role
+
+Question:The reasoning is flawed because the argument
+
+### Type:
+Identify a Flaw
+
+Question:Which one of the following arguments exhibits flawed reasoning most similar to that exhibited by the argument above?
+
+### Type:
+Match Flaws
+
+Question:Which one of the following arguments is most similar in its reasoning to the argument above?
+
+### Type:
+Match Structures
+
+Question:Chesters response suggests that he misinterpreted which one of the following expressions used by Rose?
+
+### Type:
+Others
+
+Question:Which of the following most logically completes the argument?
+
+### Type:
+Others
+
+=== target question
+
+{target_question}
+
+### Type:

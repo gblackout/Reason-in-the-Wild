@@ -1,0 +1,34 @@
+### Problem type and tactic
+<summary of the tactic>
+
+**Typical use cases**
+<list of typical use cases of this tactic>
+
+**Model and tactic outputs**
+<What is the model involved in the tactic and what are the outputs of it>
+
+**Tactic assumptions and requirements**
+<what is required to apply this tactic? What are the assumptions of this tactic>
+
+
+### Tactic model template
+
+**Model definition**
+
+[Instruction: the model built here needs to be self-contained and information are complete without referring to
+the original question]
+
+To apply this tactic, we build a model with the following components
+
+<define the complete self-contained model specified by this tactic that represents the problem,
+define all the components necessary to build such a model; for every such component, describe its
+definition and the relation to other components>
+
+**Action space**
+<define a list of actions allowed; each action is defined over its input, functionality, and output; the list
+should be exhaustive>
+
+**Tactic Goal**
+<define the end goal of this tactic. Depending on the problem type, it could be a value inferred from the actions
+for an unknown variable; it could be true, false, or unknown state of a statement; or it could be that a certain
+condition is met (e.g., reaching limited numbers of actions, ordering a pool of entities until the pool is empty)>

@@ -1,0 +1,126 @@
+### Tactic name
+predicate_logic_z3
+
+### Problem type and tactic
+This tactic builds a formal logical model using predicate logic formalism with the help of python z3 lib.
+This tactic is suitable for solving reasoning problems that involves deductive, inductive or, abductive reasoning.
+To do so, the tactic will represent the problem as a self-contained first-order logic (FOL) system that consists
+of Constants, Predicates, Logic Variables, Quantifiers, Functions, Logic Operators, Grounded Facts, Logic Formulas
+and so on; then it will seek to perform formal reasoning with the help with z3 lib.
+
+**Typical use cases**
+The tactic is suitable for problems that can be represented by an FOL system and solved by performing the following
+three types of formal reasoning
+
+- Deductive reasoning: Given Facts and Logic Formulas, deduce new Facts from the system by applying the Formulas to the
+  Facts.
+- Inductive reasoning: Given Facts and Potentially some Formulas, induce new Formulas that entail the given Facts and
+  are consistent with the preexisting Formulas.
+- Abductive reasoning: Given Facts, Logic Formulas, and a consequence Fact, infer the missing Facts or Formulas, such
+  that the consequence Fact can be entailed by the system.
+
+**Model and tactic outputs**
+- Model: To apply the tactic, one builds a self-contained FOL system that fully represent the problem using z3 lib
+
+- Outputs: the z3 code should output either 'Agree', 'Contradict', or 'Uncertain'.
+  'Agree' means the Facts or Formulas agree with the system
+  'Contradict' means the Facts or Formulas contradict with the system
+  'Uncertain' means the Facts or Formulas contradict with the system
+
+Note that the type of reasoning and the system built for the problem determine:
+ - How the output is interpreted.
+ - Whether the output serves as the final answer or intermediate checks for the problem-specific answer
+For example: for a deductive reasoning task with a given hypothesis, one builds the system to determine if the
+hypothesis Agree/Contradict/Uncertain to the system; for a deductive reasoning task where one wants to deduce all
+possible Facts, then one should infer all Facts that Agree with the system; for inductive reasoning, one infers the
+Formulas that Agree with the system; for abductive reasoning, one infers the Facts or Formulas that Agree with the
+consequence and the system.
+
+**Tactic assumptions and requirements**
+- Requirements: This tactic requires using z3 to verify the reasoning process, which in turn requires the problem
+  to be fully represented as either a deductive, inductive, or abductive reasoning task. Therefore, any tasks that
+  needs to be solved with other types of reasoning are NOT suitable for this tactic. DO check if this task
+  belongs to one of the three reasoning types (deductive/inductive/abductive) before applying this tactic.
+
+- Assumptions: This tactic generally works with both real-world and hypothetical cases without any additional
+assumptions. However, if the problem requires bringing in some commmonsense knowledge, this tactic will be explicit
+about what commonsense is used in order to reach the conclusion.
+
+
+
+### Tactic details
+
+**Code template**
+You will use the following code template to solve the problem.
+
+```python
+import z3
+
+def check_model(solver):
+    res = solver.check()
+    if res == z3.sat:
+        return 'sat'
+    elif res == z3.unsat:
+        return 'unsat'
+    else:
+        return 'unsolvable'
+
+def check_constraint(solver, c):
+    pos_res = solver.check(c)
+    neg_res = solver.check(z3.Not(c))
+
+    if (pos_res == z3.sat) and (neg_res == z3.unsat):
+        return 'Agree'
+    elif (pos_res == z3.unsat) and (neg_res == z3.sat):
+        return 'Contradict'
+    elif (pos_res == z3.unknown) or (neg_res == z3.unknown):
+        return 'unsolvable'
+    else:
+        return 'Uncertain'
+
+def main():
+    s = z3.Solver()
+
+    # build the FOL system below
+    # you can use check_model, check_constraint for checking intermediate steps
+    # Do use check_constraint to return the answer which should be either 'Agree', 'Contradict', or 'Uncertain'
+    # in case of 'unsolvable', you need to rewrite the system, or reconsider if z3 is the right tool, if not, use
+    # action #A# Tactic check to exit.
+```
+
+**Action space**
+You will use and ONLY use the following actions to solve the problem.
+You can apply actions in arbitrary order and arbitrary number of times.
+
+#A# Build FOL model
+- Input: the original problem given
+- Functionality: build the FOL system that represents the problem
+- Output: the main() function with z3 code of the FOL system with comments.
+
+#A# Infer new Facts or Formulas
+- Input: z3 code built so far
+- Functionality: Infer the Facts and Formulas to solve the reasoning tasks
+- Output: the main() function with z3 code with the inferred Facts or Formulas with comments.
+
+#A# Check model or constraint sat status
+- Input: z3 code built so far
+- Functionality: use check_constraint or check_model to check the system built so far is good or not, either by
+  printing it or returning it through main
+- Output: observation from print and/or main function output
+
+#A# Revise code
+- Input: z3 code built so far, with potential feedbacks from observations or users
+- Functionality: reflect on the Input, specify if the tactic is good so far, and if not what are the issues;
+  then, revise the code to continue the problem-solving process or address the issues.
+- Output: the main() function with revised z3 code
+
+#A# Aggregate and answer
+- Input: all z3 code, revisions, and observations so far
+- Functionality: aggregate and summarize the outputs produced so far, and provide the problem-specific final answer
+- Output: the problem-specific answer
+
+#A# Tactic check
+- Input: the original problem, all z3 code, revisions, and observations so far
+- Functionality: analyze the Input, determine if the tactic can solve the problem or not
+- Output: "Tactic Good" if tactic can solve the problem; "Tactic Bad" if tactic cannot solve the
+  problem.

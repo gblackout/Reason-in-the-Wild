@@ -1,0 +1,59 @@
+### Tactic name
+main_routing
+
+### Problem type and tactic
+Given a main problem and a list of problem-solving tactics, this tactic solves the problem by iteratively identifying
+the subproblem in it for every option and solving it by calling the corresponding tactic, then finally aggregating the
+results of individual subproblems.
+
+### Tactic details
+
+**Action space**
+You will use and ONLY use the following actions to solve the problem.
+You can apply actions in arbitrary order and arbitrary number of times.
+
+#A# Call tactic: math
+- Input: the main problem, and the past results
+- Functionality: This tactic seeks to model the question as a math model and solves it with the help of python and math
+  libs such as sympy and numpy. This tactic is suitable for solving problems that involves calculation and math
+  reasoning.
+- Output: the option index and the subproblem to be solved by this tactic in the form of
+  "
+  ### option
+  <index of the option>
+  ### subproblem
+  <subproblem>
+  "
+
+#A# Call tactic: formal logic z3
+- Input: the main problem, and the past results
+- Functionality: This tactic builds a formal logical model using predicate logic formalism with the help of python z3
+  lib. This tactic is suitable for solving reasoning problems that involves deductive, inductive or, abductive reasoning.
+  To do so, the tactic will represent the problem as a self-contained first-order logic (FOL) system then it will seek
+  to perform formal reasoning with the help with z3 lib.
+- Output: the option index and the subproblem to be solved by this tactic in the form of
+  "
+  ### option
+  <index of the option>
+  ### subproblem
+  <subproblem>
+  "
+
+#A# Call tactic: general program
+- Input: the main problem, and the past results
+- Functionality: this tactic solves the problems that are ambiguous to model with the all the tactics above, which
+  typically those that requires commonsense reasoning and might not be directly solvable by the program. This
+  tactic solves the problem by writing a generic problem that potentially uses a wide range of libs such as numpy,
+  sympy, networkx, and z3.
+- Output: the option index and the subproblem to be solved by this tactic in the form of
+  "
+  ### option
+  <index of the option>
+  ### subproblem
+  <subproblem>
+  "
+
+#A# Aggregate and answer
+- Input: all thoughts, actions, and observations so far
+- Functionality: aggregate and summarize the outputs produced so far, and provide the problem-specific final answer
+- Output: the problem-specific answer

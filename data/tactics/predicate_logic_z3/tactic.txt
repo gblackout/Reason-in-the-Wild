@@ -1,0 +1,121 @@
+### Tactic name
+predicate_logic_z3
+
+### Problem type and tactic
+This tactic builds a formal logical model using predicate logic formalism with the help of python z3 lib.
+This tactic is suitable for solving reasoning problems that involves deductive, inductive or, abductive reasoning.
+To do so, the tactic will represent the problem as a self-contained first-order logic (FOL) system that consists
+of Constants, Predicates, Logic Variables, Quantifiers, Functions, Logic Operators, Grounded Facts, Logic Formulas
+and so on; then it will seek to perform formal reasoning with the help with z3 lib.
+
+**Typical use cases**
+The tactic is suitable for problems that can be represented by an FOL system and solved by performing the following
+three types of formal reasoning
+
+- Deductive reasoning: Given Facts and Logic Formulas, deduce new Facts from the system by applying the Formulas to the
+  Facts.
+- Inductive reasoning: Given Facts and Potentially some Formulas, induce new Formulas that entail the given Facts and
+  are consistent with the preexisting Formulas.
+- Abductive reasoning: Given Facts, Logic Formulas, and a consequence Fact, infer the missing Facts or Formulas, such
+  that the consequence Fact can be entailed by the system.
+
+**Model and tactic outputs**
+- Model: To apply the tactic, one builds a self-contained FOL system that fully represent the problem using z3 lib
+
+- Outputs: the z3 code should output either 'Agree', 'Contradict', or 'Uncertain'.
+  'Agree' means the Facts or Formulas agree with the system
+  'Contradict' means the Facts or Formulas contradict with the system
+  'Uncertain' means the Facts or Formulas contradict with the system
+
+Note that the type of reasoning and the system built for the problem determine:
+ - How the output is interpreted.
+ - Whether the output serves as the final answer or intermediate checks for the problem-specific answer
+For example: for a deductive reasoning task with a given hypothesis, one builds the system to determine if the
+hypothesis Agree/Contradict/Uncertain to the system; for a deductive reasoning task where one wants to deduce all
+possible Facts, then one should infer all Facts that Agree with the system; for inductive reasoning, one infers the
+Formulas that Agree with the system; for abductive reasoning, one infers the Facts or Formulas that Agree with the
+consequence and the system.
+
+
+### Tactic details
+You will use the following python libs to solve the problem:
+Any builtin Python libs
+z3
+
+**Code template**
+You will use the following code template to solve the problem.
+
+```python
+import z3
+from z3 import *
+
+def check_model(solver):
+    res = solver.check()
+    if res == sat:
+        return 'sat'
+    elif res == unsat:
+        return 'unsat'
+    else:
+        return 'unsolvable'
+
+def check_constraint(solver, c):
+    pos_res = solver.check(c)
+    neg_res = solver.check(Not(c))
+
+    if (pos_res == sat) and (neg_res == unsat):
+        return 'Agree'
+    elif (pos_res == unsat) and (neg_res == sat):
+        return 'Contradict'
+    elif (pos_res == unknown) or (neg_res == unknown):
+        return 'unsolvable'
+    else:
+        return 'Uncertain'
+
+def main():
+    s = z3.Solver()
+    <your code>
+```
+
+**Action space**
+You will use and ONLY use the following actions to solve the problem.
+You can apply actions in arbitrary order and arbitrary number of times.
+
+#A# Plan
+- Input: the problem given
+- Functionality: give a plan on how to solve the question, including a sketch of the solution, libs to be used,
+and code snippets
+- Output: text description of the plan and potential code snippets of the form
+    ```python
+    <your code>
+    ```
+
+#A# Build FOL model
+- Input: the original problem given
+- Functionality: build the FOL system that represents the problem; use check_constraint or check_model to produce
+  output
+- Output: the main() function with z3 code of the FOL system of the form
+    ```python
+    def main():
+        <your code>
+    ```
+
+#A# Revise code
+- Input: z3 code built so far, with potential feedbacks from observations or users
+- Functionality: reflect on the Input, specify if the tactic is good so far, and if not what are the issues;
+  then, revise the code to continue the problem-solving process or address the issues.
+- Output: the main() function with revised z3 code of the form
+    ```python
+    def main():
+        <your code>
+    ```
+
+#A# Aggregate and answer
+- Input: all z3 code, revisions, and observations so far
+- Functionality: aggregate and summarize the outputs produced so far, and provide the problem-specific final answer
+- Output: the problem-specific answer
+
+#A# Tactic check
+- Input: the original problem, all z3 code, revisions, and observations so far
+- Functionality: analyze the Input, determine if the tactic can solve the problem or not
+- Output: "Tactic Good" if tactic can solve the problem; "Tactic Bad" if tactic cannot solve the
+  problem.

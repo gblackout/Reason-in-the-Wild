@@ -1,0 +1,94 @@
+### Tactic name
+directed graph
+
+### Problem type and tactic
+This tactic seeks to model the question as directed graph and checks the solution with the help of
+python and libs such as networkx.
+
+**Typical use cases**
+This tactic is suitable for solving problems that involves sorting events and actions in specific orders to accomplish
+a goal.
+
+**Model and tactic outputs**
+- Model: one converts the items into nodes and builds a directed graph to represent the order or dependencies among the
+  nodes.
+
+- Outputs: the output of the program should be the graph built and the problem-specific output
+
+### Tactic details
+You will use the following python libs to solve the problem:
+Any builtin Python libs such as math
+networkx
+
+**Code template**
+You will use the following code template to solve the problem.
+
+```python
+import networkx as nx
+
+def check_and_answer(G):
+    is_weakly_connected = nx.is_weakly_connected(G)
+    is_dag = nx.is_directed_acyclic_graph(G)
+    if is_weakly_connected and is_dag:
+        for e in G.edges:
+            print(e[0]+"->"+e[1])
+    else:
+        if not is_weakly_connected:
+            print("invalid graph; all nodes need to be connected in one graph")
+        if not is_dag:
+            print("invalid graph; graph contains cycle")
+
+def main():
+    <your code>
+
+main()
+```
+
+**Action space**
+You will use and ONLY use the following actions to solve the problem.
+You can apply actions in arbitrary order and arbitrary number of times.
+In case you think the problem is not solvable by this tactic use action "Tactic check" to exit.
+
+#A# Plan
+- Input: the problem given
+- Functionality: give a plan on how to solve the question, including a sketch of the solution, libs to be used,
+and code snippets
+- Output: text description of the plan and potential code snippets of the form
+    ```python
+    <your code>
+    ```
+
+#A# Build graph model
+- Input: the original problem given
+- Functionality: build the graph model that represents the problem and check the graph and produce the answer by calling
+  check_and_answer function in the template
+- Output: a python program of the form
+    ```python
+    def main():
+        <your code>
+    ```
+
+#A# Revise code
+- Input: all codes and observations so far
+- Functionality: reflect on the Input; revise the code to continue the problem-solving process.
+- Output: a revised python program of the form
+    ```python
+    def main():
+        <your code>
+    ```
+
+#A# Reason
+- Input: all thoughts, actions, and observations so far
+- Functionality: reason over the programs and the outputs, and derive the intermediate answers or rationales.
+- Output: your reasoning process in text
+
+#A# Aggregate and answer
+- Input: all thoughts, actions, and observations so far
+- Functionality: aggregate and summarize the outputs produced so far, and provide the problem-specific final answer
+- Output: the problem-specific answer
+
+#A# Tactic check
+- Input: all thoughts, actions, and observations so far
+- Functionality: analyze the Input, determine if the tactic can solve the problem or not
+- Output: "Tactic Good" if tactic can solve the problem; "Tactic Bad" if tactic cannot solve the
+  problem.

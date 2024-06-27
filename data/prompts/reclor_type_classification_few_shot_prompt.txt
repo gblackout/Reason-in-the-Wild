@@ -1,0 +1,187 @@
+You will classify a question into one of the following types. Below is the list of question types and their
+corresponding descriptions. You are also given examples questions with their types.
+
+=== question types
+
+Necessary Assumptions: identify the claim that must be true or is required in order for the argument to work.
+
+Sufficient Assumptions: identify a sufficient assumption, that is, an assumption that, if added to the argument,
+would make it logically valid.
+
+Strengthen: identify information that would strengthen an argument
+
+Weaken: identify information that would weaken an argument
+
+Evaluation: identify information that would be useful to know to evaluate an argument
+
+Implication: identify something that follows logically from a set of premises
+
+Conclusion/Main Point: identify the conclusion/main point of a line of reasoning
+
+Most Strongly Supported: find the choice that is most strongly supported by a stimulus
+
+Explain or Resolve: identify information that would explain or resolve a situation
+
+Principle: identify the principle, or find a situation that conforms to a principle, or match the principles
+
+Dispute: identify or infer an issue in dispute
+
+Technique: identify the technique used in the reasoning of an argument
+
+Role: describe the individual role that a statement is playing in a larger argument
+
+Identify a Flaw: identify a flaw in an arguments reasoning
+
+Match Flaws: find a choice containing an argument that exhibits the same flaws as the passages argument
+
+Match the Structure: match the structure of an argument in a choice to the structure of the argument in the passage
+
+Others: other types of questions which are not included by the above
+
+=== examples
+
+Context:Train service suffers when a railroad combines commuter and freight service. By dividing its attention between its freight and commuter customers, a railroad serves neither particularly well. Ttherefore, if a railroad is going to be a successful business, then it must concentrate exclusively on one of these two markets.
+
+Question:For the argument to be logically correct, it must make which of the of the following assumptions?
+
+### Type:
+Necessary Assumptions
+
+Context:Chapin: Commentators have noted with concern the recent electoral success by extremist parties in several democratic countries. But these successes pose no threat to democracy in those countries. The extremists have won pluralities, not majorities. Furthermore, they have won only when the moderate parties were preoccupied with arguing among themselves.
+
+Question:Which one of the following, if assumed, enables Chapin's conclusion to be properly drawn?
+
+### Type:
+Sufficient Assumptions
+
+Context:One hundred people listened to a single musical composition, "Study I, " on a certain morning. Later that day, they listened to "Study I" again and to another musical composition, "Study II, " and were asked which they preferred. A substantial majority preferred "Study I. " These results support the hypotheses that people prefer music they have heard on an earlier occasion to music they are hearing for the first time.
+
+Question:Which one of the following, if true, most strengthens the argument?
+
+### Type:
+Strengthen
+
+Context:The higher the average fat intake among the residents of a country, the higher the incidence of cancer in that country; the lower the average fat intake, the lower the incidence of cancer. So individuals who want to reduce their risk of cancer should reduce their fat intake.
+
+Question:Which one of the following, if true, most weakens the argument?
+
+### Type:
+Weaken
+
+Context:Business Analyst: National Motors began selling the Luxora-its new model of sedan-in June. Last week, National released sales figures for the summer months of June, July, and August that showed that by the end of August only 80, 000 Luxoras had been sold. Ttherefore, National will probably not meet its target of selling 500, 000 Luxoras in the model' s first twelve months.
+
+Question:Which of the following would be most useful to establish in order to evaluate the analyst's prediction?
+
+### Type:
+Evaluation
+
+Context:Any great ape can learn to recognize its reflection in a mirror. Any animal that recognizes its reflection in a mirror has a sense of self. An animal has a sense of the minds of others only if it possesses a sense of self.
+
+Question:Which one of the following follows logically from the information above?
+
+### Type:
+Implication
+
+Context:David Foster Wallace' s Infinite Jest is the holy grail of modern literature. It will stand the test of time in its relevance. Every single person who starts reading Infinite Jest cannot physically put down the book until completing it.
+
+Question:Which of the following is the main point of the passage?
+
+### Type:
+Conclusion/Main Point
+
+Context:The majority of people in city Y spend an increasing amount of money on exercise equipment after they graduate from high school. For almost all of the people in city Y, the proportion of their income spent on exercise equipment remains consistent throughout their lives.
+
+Question:The statements in the paragraph above, if true, most strongly support which of the following conclusions about people in city Y?
+
+### Type:
+Most Strongly Supported
+
+Context:In the past ten years, there have been several improvements in mountain-climbing equipment. These improvements have made the sport both safer and more enjoyable for experienced climbers. Despite these improvements, however, the rate of mountain-climbing injuries has doubled in the past ten years.
+
+Question:If all of the statements above are true, which of the following, if true, best reconciles their apparent discrepancy?
+
+### Type:
+Explain or Resolve
+
+Context:A government study indicates that raising speed limits to reflect the actual average speeds of traffic on level, straight stretches of high-speed roadways reduces the accident rate. Since the actual average speed for level, straight stretches of high-speed roadways tends to be 120 kilometers per hour (75 miles per hour), that should be set as a uniform national speed limit for level, straight stretches of all such roadways.
+
+Question:Which one of the following principles, if valid, most helps to justify the reasoning above?
+
+### Type:
+Principle
+
+Context:Alex: Shrimp farming results in damage to the environment, because investors make quick profits from such farming and then abandon the farms. Jolene: I disagree. Although some shrimp farms have proved unsustainable and have been quickly abandoned, properly built shrimp farms take a long time to construct and are costly to operate. Most owners try to make sure that their farms are productive for many years.
+
+Question:Their dialogue provides the most support for the claim that Alex and Jolene disagree with each other over whether
+
+### Type:
+Dispute
+
+Context:Monica: The sculpture commissioned for our town plaza has been scorned by the public ever since it went up. But since the people in our town do not know very much about contemporary art, the unpopularity of the work says nothing about its artistic merit and thus gives no reason for removing it. Hector: You may be right about what the sculpture' s popularity means about its artistic merit. However, a work of art that was commissioned for a public space ought to benefit the public, and popular opinion is ultimately the only way of determining what the public feels is to its benefit. Thus, if public opinion of this sculpture is what you say, then it certainly ought to be removed.
+
+Question:Monica's and Hector's statements commit them to disagreeing about which one of the following principles?
+
+### Type:
+Dispute
+
+Context:Executive: We recently ran a set of advertisements in the print version of a travel magazine and on that magazine' s website. We were unable to get any direct information about consumer response to the print ads. However, we found that consumer response to the ads on the website was much more limited than is typical for website ads. We concluded that consumer response to the print ads was probably below par as well.
+
+Question:The executive's reasoning does which one of the following?
+
+### Type:
+Technique
+
+Context:One researcher writes, "Human beings are innately aggressive. " As evidence, the researcher cites the prevalence of warfare in history, and then discounts any current disinclination to fight: "The most peaceable peoples of today were often ravagers of yesteryear and will probably fight again in the future. " But if some peoples are peaceable now, then aggression itself cannot be coded in our genes, only the potential for it. If "innate" only means possible, or even likely in certain environments, then everything we do is innate and the word has no meaning.
+
+Question:Which one of the following most accurately describes the technique used in the passage to weaken the argument for the claim that aggressiveness is innate to human beings?
+
+### Type:
+Technique
+
+Context:Country X' s recent stock-trading scandal should not diminish investors' confidence in the country's stock market. For one thing, <b> the discovery of the scandal confirms that Country X has a strong regulatory system </b>, as the following considerations show. In any stock market, some fraudulent activity is inevitable. If a stock market is well regulated, any significant stock-trading fraud in it will very likely be discovered. This deters potential perpetrators and facilitates improvement in regulatory processes.
+
+Question:In the argument, the portion in boldface plays which of the following roles?
+
+### Type:
+Role
+
+Context:A commonly accepted myth is that left-handed people are more prone to cause accidents than are right-handed people. But this is, in fact, just a myth, as is indicated by the fact that more household accidents are caused by right-handed people than are caused by left-handed people.
+
+Question:The reasoning is flawed because the argument
+
+### Type:
+Identify a Flaw
+
+Context:The student body at this university takes courses in a wide range of disciplines. Miriam is a student at this university, so she takes courses in a wide range of disciplines.
+
+Question:Which one of the following arguments exhibits flawed reasoning most similar to that exhibited by the argument above?
+
+### Type:
+Match Flaws
+
+Context:For a computer to be intelligent, it must possess at least one of three qualities: creativity, self-awareness, or the ability to learn from its mistakes. Because the AR3000 is not creative or self-aware, it must have the ability to learn from its mistakes if it is intelligent.
+
+Question:Which one of the following arguments is most similar in its reasoning to the argument above?
+
+### Type:
+Match Structures
+
+Context:Rose: Let' s not see the movie Winter Fields. I caught a review of it in the local paper and it was the worst review I' ve read in years. Chester: I don' t understand why that might make you not want to see the movie. And besides, nothing in that paper is particularly well written.
+
+Question:Chesters response suggests that he misinterpreted which one of the following expressions used by Rose?
+
+### Type:
+Others
+
+Context:When people engage in activities that help others, their brain releases endorphins, the brain's natural opiates, which induce in people a feeling of well-being. It has been suggested that regular release of endorphins increases people's longevity. And a statistic on adults who regularly engage in volunteer work helping others shows that they live longer, on average, than adults who do not volunteer. However, that statistic would be what we would expect even if volunteering does not boost longevity, because__.
+
+Question:Which of the following most logically completes the argument?
+
+### Type:
+Others
+
+=== target question
+
+{target_question}
+
+### Type:

@@ -1,0 +1,68 @@
+### Problem type and tactic
+
+This tactic is for analyzing the logic structures of statements and context in order to compare it with
+other statements and context to see if they share a similar underlying logic structure, or are associated in
+a logical manner such as one is being supported by, contradicted by, strengthened by, weakened by, inferred by,
+resolved by, proceeded by the other statement.
+
+**Typical use cases**
+This tactic is frequently used in the following cases:
+(1) You are given several statements and potentially a context, and are asked to compare their underlying
+    pattern of reasoning, which cannot be properly captured by formal logic models such as deductive/inductive/abductive
+    reasoning.
+
+**Model and tactic outputs**
+To solve this problem, you will simplify the statements and extract the essential logic structures from the statements,
+then you will compare and analyze the semantics of the structures to see whether they are similar or not.
+
+As the result, this tactic will produce semi-formal logic representations of the original statements which might take
+the form of a logic chain, a causal graph, or a set of clauses that are conditioned on each other in a structured way;
+Also, the tactic will provide a semantic analysis on these representations and show if they are logical similar or not.
+
+**Tactic assumptions and requirements**
+
+This tactic generally works with both real-world and hypothetical cases without any additional assumptions.
+However, if the problem requires bringing in some commmonsense knowledge, this tactic will be explicit about what
+commonsense is used in order to reach the conclusion.
+
+
+### Tactic model template
+
+**Model definition**
+
+To apply this tactic, we build a model with the following components
+
+[Instruction: the model built here needs to be self-contained and information are complete without referring to
+the original question]
+
+C1. Original statements and context: the statements and the context (if there is one) to be analyzed and compared
+(DO put the complete and self-contained statements and context here)
+
+C2. Assumptions and commonsense knowledge: the assumptions and commonsense knowledge that you think are necessary for
+analyzing the statements, which, after being specified, make it a self-contained problem.
+
+**Action space**
+
+A1. Extract logic structure
+- Input: the original statement
+- Functionality: extract the underlying logic structure that represents the core semantic of a statement
+- Output: a logic structure that takes the form of a logic chain, or a causal graph or a set of clauses
+that are conditioned on each other in a structured way.
+
+A2. Compare logic structure
+- Input: two logic structures extracted by A1
+- Functionality: compare and analyze two logic structures, check if they are similar or are associated in a
+logical manner such as one is being supported by, contradicted by, strengthened by, weakened by, inferred by,
+resolved by, proceeded by, summarized by the other statement.
+- Output: a conclusion on how the logic structures are logically associated with each other with the given context.
+
+A3. Aggregate and answer
+- Input: All previous outputs produced by other actions
+- Functionality: aggregate and summarize the outputs produced so far, and provide final answer to the specific problem
+together with rationales.
+- Output: the problem specific answer and the rationales that support the answer.
+
+**Tactic Goal**
+The goal of this tactic is to provide a detailed, step-by-step analysis on the provided statements by building the
+model and apply the actions specified above, and finally provide the problem specific answer and the
+rationales that support the answer.

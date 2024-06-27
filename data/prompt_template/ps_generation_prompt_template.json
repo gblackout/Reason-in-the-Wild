@@ -1,0 +1,5 @@
+{
+  "input_template": "### Question:\n{question}\n\n",
+  "output_template": "### Steps:\n{steps}",
+  "output_splits": ["### Steps:"]
+}

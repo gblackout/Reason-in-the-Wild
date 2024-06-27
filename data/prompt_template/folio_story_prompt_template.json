@@ -1,0 +1,6 @@
+{
+  "input_template": "### Premises:\n{premises}\n\n### Conclusion\n{conclusion}\n\n",
+  "aux_input_template": "### FOL Premises:\n{fol-premises}\n\n### FOL Conclusion:\n{fol-conclusion}\n\n### FOL Reasoner Outputs:\n{fol-reasoner-outputs}\n\n",
+  "output_template": "### Reasoning Steps:\n{reasoning-steps}\n\n### Answer:\n{answer}",
+  "output_splits": ["### Reasoning Steps:", "### Answer:"]
+}

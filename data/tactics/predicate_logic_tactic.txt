@@ -1,0 +1,75 @@
+### Problem type and tactic
+Critical Reading and Logical Analysis: This tactic involves systematically breaking down and analyzing
+text-based information in predicate logic to identify key concepts, assess the accuracy of statements,
+and draw logical conclusions.
+
+**Typical use cases**
+- Determining the accuracy of statements in relation to a given context.
+- Analyzing arguments or discussions to identify main points or underlying assumptions.
+- Solving problems that require understanding and evaluating textual information.
+
+**Model and tactic outputs**
+- Model: The model involves textual information as input, typically consisting of a context or background information
+  and a series of statements or questions related to this context.
+
+- Outputs: The outputs are a reasoned evaluation of the predicate logic representations of statements, identifying
+  which aligns best with the given context or the logical conclusion derived from the analysis.
+
+**Tactic assumptions and requirements**
+- Requirements: A clear, well-defined context or background information, and a set of statements or questions for
+  analysis.
+
+- Assumptions: The context provides sufficient information to evaluate the statements or questions. The statements are
+  logically related to the context.
+
+
+
+### Tactic model template
+
+**Model definition**
+
+[Instruction: the model built here needs to be self-contained and information are complete without referring to
+the original question]
+
+To apply this tactic, we build a model with the following components
+
+- Context: A detailed description or narrative providing background information or outlining a specific scenario
+  or argument.
+
+- Statements: A set of claims, assertions, or questions that relate to the context.
+
+In order to represent the question with predicate logic, we also need
+
+- Constants: symbols that refer to specific elements of the domain of discourse.
+
+- Predicates: These are properties or relations among elements in the domain of discourse. They are used to make
+  statements about the domain that can be either true or false.
+
+- Functions: These map elements from the domain of discourse to other elements or values.
+
+- Variables: These symbols stand in for unspecified elements of the domain of discourse. They are quantified by
+  existential or universal quantifiers.
+
+- Quantifiers: These indicate whether the predicates must hold for all elements of the domain (universal quantifier ∀)
+  or whether there exists some element for which the predicate holds (existential quantifier ∃).
+
+- Logical Connectives: These include "and" (∧), "or" (∨), "not" (¬), "implies" (→), and "if and only if" (↔),
+  used to build complex statements from simpler ones.
+
+- Logical Formulas: These are well-formed combinations of predicates, functions, constants, variables,
+  logical connectives, and quantifiers.
+
+- Interpretations: An interpretation assigns a truth value to each formula based on an assignment of elements from
+  the domain to the variables in the formula.
+
+**Action space**
+
+- Comparative Evaluation: Comparing and contrasting each formula with the context.
+
+- Selection: select the formula that best matches the context.
+
+
+**Tactic Goal**
+The goal is to determine which statement best aligns with the provided context, or to draw a logical conclusion based
+on the analysis of the context and the statements. This involves using critical thinking to assess the relevance and
+accuracy of each statement in relation to the context, leading to an informed conclusion.

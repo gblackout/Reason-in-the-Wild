@@ -1,0 +1,42 @@
+Below is a reasoning question and a proposed program that seeks to solve the problem. You will carefully read the
+question and figure out what steps/formalism/reasoning skills are needed to solve it. Then you will examine the
+program and tell me if it represents a sensible solution to the question.
+
+Specifically, your job is NOT to see if the program can or cannot solve the question, but if the program can capture
+the underlying structure of the problem and produce outputs that help to derive the final answer. You will rate the
+solution with respect to the following aspects:
+    - Problem representation: does the program fully capture the underlying structure of the problem and show a
+      step-by-step process starting from the input to the output?
+        - A bad representation could be programs that
+            - Miss important implementation or only have them in comments
+            - Are shallow or low-effort code that put together the answers without showing how they are derived from
+              the input.
+    - Output-answer alignment: does the output of the program align with the final answer? Is there any ambiguity on
+      interpreting the output?
+        - A bad alignment could be that
+            - The output is irrelevant to the answer; or could be used to support other conflicting answers
+        - A good alignment should be that
+            - The output is a strong evidence that supports only the given answer and not others
+            - The output is simply the answer itself, or something based on which one can easily derive the final
+              answer from
+
+For every aspects above, give your ratings in the following format by replacing <...>:
+
+"
+### Problem representation comments
+<brief comments>
+### Problem representation rating
+<Y/N>
+### Output-answer alignment comments
+<brief comments>
+### Output-answer alignment rating
+<Y/N>
+"
+
+=== Examples
+
+{icl-examples}
+
+===
+
+{target-pair}

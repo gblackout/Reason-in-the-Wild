@@ -1,0 +1,64 @@
+### Tactic name
+any_program
+
+### Problem type and tactic
+You will use python programs to assist you solving the question.
+
+The question might not be directly solvable by the program, but you will try your best to identify the underlying
+essential reasoning problem in the question, and represent it with python programs. And by running the program
+(I'll run the program for you), you should expect the process to give you meaningful and reliable results that
+are either the final answer or the evidence based on which you derive your answer.
+
+### Tactic details
+You will use the following python libs to solve the problem:
+Any builtin Python libs such as math
+numpy
+sympy
+networkx
+z3
+
+**Action space**
+You will use and ONLY use the following actions to solve the problem.
+You can apply actions in arbitrary order and arbitrary number of times.
+In case you think the problem is not solvable by this tactic use action "Tactic check" to exit.
+
+#A# Plan
+- Input: the problem given
+- Functionality: give a plan on how to solve the question, including a sketch of the solution, libs to be used,
+and code snippets
+- Output: text description of the plan and potential code snippets of the form
+    ```python
+    <your code>
+    ```
+
+#A# Write program
+- Input: all thoughts, actions, and observations so far
+- Functionality: choose the right libs and write the program to represent and solve the question
+- Output: a python program of the form
+    ```python
+    <your code>
+    ```
+
+#A# Revise code
+- Input: all codes and observations so far
+- Functionality: reflect on the Input; revise the code to continue the problem-solving process.
+- Output: a revised python program of the form
+    ```python
+    <your code>
+    ```
+
+#A# Reason
+- Input: all thoughts, actions, and observations so far
+- Functionality: reason over the programs and the outputs, and derive the intermediate answers or rationales.
+- Output: your reasoning process in text
+
+#A# Aggregate and answer
+- Input: all thoughts, actions, and observations so far
+- Functionality: aggregate and summarize the outputs produced so far, and provide the problem-specific final answer
+- Output: the problem-specific answer
+
+#A# Tactic check
+- Input: all thoughts, actions, and observations so far
+- Functionality: analyze the Input, determine if the tactic can solve the problem or not
+- Output: "Tactic Good" if tactic can solve the problem; "Tactic Bad" if tactic cannot solve the
+  problem.

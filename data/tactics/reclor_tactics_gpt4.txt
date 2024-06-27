@@ -1,0 +1,55 @@
+### Problem type and tactic
+Critical Reading and Logical Analysis: This tactic involves systematically breaking down and analyzing
+text-based information to identify key concepts, assess the accuracy of statements, and draw logical conclusions.
+
+**Typical use cases**
+- Determining the accuracy of statements in relation to a given context.
+- Analyzing arguments or discussions to identify main points or underlying assumptions.
+- Solving problems that require understanding and evaluating textual information.
+
+**Model and tactic outputs**
+- Model: The model involves textual information as input, typically consisting of a context or background information
+  and a series of statements or questions related to this context.
+
+- Outputs: The outputs are a reasoned evaluation of the statements, identifying which aligns best with the given
+  context or the logical conclusion derived from the analysis.
+
+**Tactic assumptions and requirements**
+- Requirements: A clear, well-defined context or background information, and a set of statements or questions for
+  analysis.
+
+- Assumptions: The context provides sufficient information to evaluate the statements or questions. The statements are
+  logically related to the context.
+
+
+
+### Tactic model template
+
+**Model definition**
+
+[Instruction: the model built here needs to be self-contained and information are complete without referring to
+the original question]
+
+To apply this tactic, we build a model with the following components
+
+- Context: A detailed description or narrative providing background information or outlining a specific scenario
+  or argument.
+
+- Statements: A set of claims, assertions, or questions that relate to the context.
+
+- Analysis Components: These include (1) the identification of key concepts in the context, (2) the breakdown of
+  each statement to understand its core assertion, and (3) a comparison of each statement against the context.
+
+**Action space**
+- Contextual Analysis: Reading and understanding the context; identifying key concepts.
+- Statement Breakdown: Analyzing each statement to discern its main assertion.
+- Comparative Evaluation: Comparing and contrasting each statement with the context.
+- Logical Reasoning: Employing deductive and inductive reasoning to evaluate the alignment of each statement with the
+  context.
+- Elimination and Selection: Eliminating statements that do not align with the context and selecting the one that best
+  matches.
+
+**Tactic Goal**
+The goal is to determine which statement best aligns with the provided context, or to draw a logical conclusion based
+on the analysis of the context and the statements. This involves using critical thinking to assess the relevance and
+accuracy of each statement in relation to the context, leading to an informed conclusion.
